@@ -1,0 +1,24 @@
+{
+  "name": "@ewarren/bsd-node",
+  "version": "1.0.0",
+  "description": "NodeJS Library for interacting with the BSD Tools",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elizabeth-Warren/bsd-node.git"
+  },
+  "author": "Joe Kent <jkent@elizabethwarren.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elizabeth-Warren/bsd-node/issues"
+  },
+  "homepage": "https://github.com/Elizabeth-Warren/bsd-node#readme",
+  "dependencies": {
+    "fast-xml-parser": "^3.12.17",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}

@@ -49,7 +49,6 @@ module.exports = function init(clientUrl = null, appId = null, appSecret = null,
     }, false);
 
     const signingString = `${appId}\n${apiTimestamp}\n${path}\n${finalParameters}`;
-    console.log(signingString);
 
     const hmac = crypto.createHmac('sha1', appSecret);
     hmac.setEncoding('hex');
@@ -67,7 +66,7 @@ module.exports = function init(clientUrl = null, appId = null, appSecret = null,
       });
 
       const data = parser.parse(response.body || '');
-      
+
       return {
         ...response,
         data,
